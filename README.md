@@ -1,10 +1,3 @@
-<style>
-	.bright {
-		color: red;
-		width: 100%;
-		}
-</style>
-
 Basic Markdown
 ==============
 
@@ -49,7 +42,19 @@ longest text line. For example:
 
 will render as:
 
-<code class="bright">This is a top level heading
-===========================
-</code>
+<div style="color: red">
+
+# heading
+
+	~~~~~~~~~~
+	This is a
+	code block
+	~~~~~~~~~~
+
+**markdown**
+
+heading number 2
+----------------
+
+</div>
 
