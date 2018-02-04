@@ -190,6 +190,33 @@ will render as:
 >           may have sublists, etc. For more information, google
 >           'markdown' or 'github flavored markdown'.
 
+Task Lists
+----------
+
+Task lists are an extension to the original markdown spec and are
+included in GitHub flavored markdown. They allow you to have an
+unordered list where each item is preceded by a checkbox, which may be
+checked or unchecked. Each item in a task list should begin with a '-'
+character, followed by a space character, followed by a '[' character,
+followed by either a space character (for an unchecked checkbox) or an
+'x' character (for a checked checkbox), followed by a ']' character,
+followed by a space character, followed by the text of the item.
+For example, this:
+
+	- [x] task 1
+	- [ ] task 2
+	- [x] task 3
+
+will be rendered as:
+
+---------------------------------------
+
+- [x] task 1
+- [ ] task 2
+- [x] task 3
+
+---------------------------------------
+
 Links
 -----
 
@@ -257,4 +284,36 @@ will be rendered as:
 > at the right edge of the page.
 
 ---------------------------------------
+
+Horizontal Rule
+---------------
+
+A horizontal rule, aka "thematic break" is produced by a line
+containing 3 or more '-' characters and nothing else.
+In this document, the rendering of markdown structures is
+displayed with horizontal rules before and after the
+rendered item. A horizontal rule looks like this:
+
+---------------------------------------
+
+Inline formatting
+-----------------
+
+Within the text of a paragraph, list item, block quote, etc.
+you may apply formatting to words, phrases or other text.
+
+To format text as inline code, use backticks:
+
+	Enter the command `rmdir -R` to recursively remove a directory
+
+will render as:
+
+---------------------------------------
+
+Enter the command `rmdir -R` to recursively remove a directory
+
+---------------------------------------
+
+
+
 
