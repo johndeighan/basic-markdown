@@ -42,10 +42,10 @@ longest text line. For example:
 
 will render as:
 
-<blockquote>
+<div>
 
 This is a top level heading
 ===========================
 
-</blockquote>
+</div>
 
