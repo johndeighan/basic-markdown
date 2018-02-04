@@ -44,8 +44,8 @@ will render as:
 
 <blockquote>
 
-	This is a top level heading
-	===========================
+This is a top level heading
+===========================
 
 </blockquote>
 
