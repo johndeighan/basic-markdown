@@ -26,6 +26,26 @@ on the line.
 >       since that will not affect the display of the text, which
 >       will be automatically wrapped to the width available.
 
+For example:
+
+	This is a
+	paragraph. It will automatically wrap
+	when the text reaches the far right
+	edge of the page - automatically.
+
+will render as:
+
+
+---------------------------------------
+
+This is a
+paragraph. It will automatically wrap
+when the text reaches the far right
+edge of the page - automatically.
+
+---------------------------------------
+
+
 Headings
 --------
 
@@ -48,4 +68,33 @@ This is a top level heading
 ===========================
 
 ---------------------------------------
+
+Code Blocks
+-----------
+
+Blocks of code are produced by taking any block of text, then adding
+a leading TAB character to each line. Blank lines need not, and
+should not, contain a TAB character (no lines should contain any
+trailing whitespace, i.e. space or TAB characters). Here is an
+example:
+
+	function sum(x, y) {
+
+	return x + y;
+	} // sum()
+
+will render as:
+
+---------------------------------------
+
+	function sum(x, y) {
+
+	return x + y;
+	} // sum()
+
+---------------------------------------
+
+Lists
+-----
+
 
