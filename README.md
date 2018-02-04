@@ -431,7 +431,7 @@ Found in **China**
 1. A hole in a mountain
 2. Tibetan prayer flags
 
-</t>
+</td>
 </tr>
 </table>
 
