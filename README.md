@@ -43,7 +43,9 @@ will render as:
 This is a
 paragraph. It will automatically wrap
 when the text reaches the far right
-edge of the page - automatically.
+edge of the page - automatically. You
+do not need to concern yourself
+with where line endings occur.
 
 ---------------------------------------
 
