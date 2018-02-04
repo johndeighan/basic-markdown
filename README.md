@@ -399,7 +399,7 @@ line will end any block of HTML that you insert, so if text
 follows, it will be treated as markdown. This can be useful
 for rendering tables or definition lists. For example:
 
-	<table>
+	<table align="center">
 	<tr>
 	<td>
 
@@ -419,7 +419,7 @@ will be rendered as:
 
 ---------------------------------------
 
-<table>
+<table align="center">
 <tr>
 <td>
 
