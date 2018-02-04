@@ -302,9 +302,10 @@ Inline formatting
 Within the text of a paragraph, list item, block quote, etc.
 you may apply formatting to words, phrases or other text.
 
-To format text as inline code, use backticks:
+To format text as inline code, surround the text with backticks:
 
 	Enter the command `rmdir -R` to recursively remove a directory
+
 
 will render as:
 
@@ -314,6 +315,72 @@ Enter the command `rmdir -R` to recursively remove a directory
 
 ---------------------------------------
 
+> **NOTE:** If the text being rendered as inline code contains
+>           single backtick characters, you may begin and end
+>           the rendering with double backticks.
 
+To format text as boldface text, use double asterisks:
 
+	This is a **really important** step!
 
+will render as:
+
+---------------------------------------
+
+This is a **really important** step!
+
+---------------------------------------
+
+(This was mentioned previously) To force a linebreak at a
+particular position in the text, insert a '\\' character,
+then start a new line:
+
+	To be or not to be,\
+	That is the question
+
+will render as:
+
+---------------------------------------
+
+To be or not to be,\
+That is the question
+
+---------------------------------------
+
+To render text with "strikethrough" characters, surround the
+text with'~' characters:
+
+	This can be done ~more~ better!
+
+will render as:
+
+---------------------------------------
+
+This can be done ~more~ better!
+
+---------------------------------------
+
+To remove the special markdown meaning of a character, you can
+escape the character with a preceding '\\' character:
+
+	To boldface the word maximum, use \*\*maximum\*\*
+
+will render as:
+
+---------------------------------------
+
+To boldface the word maximum, use \*\*maximum\*\*
+
+---------------------------------------
+
+You can use HTML character entities, though they're rarely required:
+
+	Basic&copy; Markdown
+
+will render as:
+
+---------------------------------------
+
+Basic&copy; Markdown
+
+---------------------------------------
