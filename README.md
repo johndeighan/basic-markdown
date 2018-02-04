@@ -17,7 +17,7 @@ paragraph. You should not worry about where lines break -
 the text will be wrapped to the full width available.
 It is advised that you set up your editor to automatically
 strip any trailing whitespace. If you want to force a
-break in the text, use a '\' character, then continue your
+break in the text, use a '\\' character, then continue your
 text on the next line, i.e. make the '\' the last character
 on the line.
 
