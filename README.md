@@ -28,10 +28,10 @@ break in the text, use a '\\' character, then continue your
 text on the next line, i.e. make the '\\' the last character
 on the line.
 
-> NOTE: Do not allow any line to begin with a '-' or '*' character.
->       You can prevent this by moving text around between lines
->       since that will not affect the display of the text, which
->       will be automatically wrapped to the width available.
+> **NOTE:** Do not allow any line to begin with a '-' or '*' character.
+>           You can prevent this by moving text around between lines
+>           since that will not affect the display of the text, which
+>           will be automatically wrapped to the width available.
 
 For example:
 
@@ -94,11 +94,11 @@ This is a second level heading
 
 ---------------------------------------
 
-> NOTE: There is a second style of heading in markdown which allows
->       you to have up to 6 levels of heading. However, I find it
->       less readable. If you need more than 2 levels of heading,
->       you can google "markdown" or "github flavored markdown"
->       to find out how to use it.
+> **NOTE:** There is a second style of heading in markdown which allows
+>           you to have up to 6 levels of heading. However, I find it
+>           less readable. If you need more than 2 levels of heading,
+>           you can google "markdown" or "github flavored markdown"
+>           to find out how to use it.
 
 Code Blocks
 -----------
@@ -109,10 +109,10 @@ should not, contain a TAB character (no lines should ever contain any
 trailing whitespace, i.e. space or TAB characters). Here is an
 example:
 
-> NOTE: Because I'm using code blocks to display markdown source code,
->       the following 2 pieces of text are identical. Note, however,
->       that in the first piece, each non-blank line starts with a
->       TAB character.
+> **NOTE:** Because I'm using code blocks to display markdown source code,
+>           the following 2 pieces of text are identical. Note, however,
+>           that in the first piece, each non-blank line starts with a
+>           TAB character.
 
 	function sum(x, y) {
 
@@ -184,11 +184,11 @@ will render as:
 
 ---------------------------------------
 
-> NOTE: Markdown lists are actually much more powerful than the
->       above simplified description. List items can be arbitrarily
->       long, but can be split in the markdown file. Also, lists
->       may have sublists, etc. For more information, google
->       'markdown' or 'github flavored markdown'.
+> **NOTE:** Markdown lists are actually much more powerful than the
+>           above simplified description. List items can be arbitrarily
+>           long, but can be split in the markdown file. Also, lists
+>           may have sublists, etc. For more information, google
+>           'markdown' or 'github flavored markdown'.
 
 Links
 -----
@@ -230,4 +230,31 @@ will be rendered as:
 
 Block Quote
 -----------
+
+A block quote is like a paragraph, i.e. a sequence of non-blank
+lines, except that each line begins with a '>' character,
+followed by a space character. Block quotes are what is used
+in this document to display "Notes". For example, this:
+
+	> This is a
+	> block quote which contains
+	> enough text that it illustrates
+	> that, like a paragraph, the
+	> text in the block quote will be
+	> displayed joined, then wrapped
+	> at the right edge of the page.
+
+will be rendered as:
+
+---------------------------------------
+
+> This is a
+> block quote which contains
+> enough text that it illustrates
+> that, like a paragraph, the
+> text in the block quote will be
+> displayed joined, then wrapped
+> at the right edge of the page.
+
+---------------------------------------
 
