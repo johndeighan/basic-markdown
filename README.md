@@ -7,12 +7,12 @@ correctly in virtually all implementations of
 markdown, including all implementations of GFM
 (GitHub flavored markdown).
 
-> NOTE: In markdown, all text, except code blocks, should be
->       entered flush left. However, technically, you may
->       start a line with 1, 2 or 3 space characters, and they
->       will be ignored. This is really only useful for ordered
->       lists where you may prefer to make the periods in ' 1.'
->       and '10.' line up vertically.
+> **NOTE:** In markdown, all text, except code blocks, should be
+>           entered flush left. However, technically, you may
+>           start a line with 1, 2 or 3 space characters, and they
+>           will be ignored. This is really only useful for ordered
+>           lists where you may prefer to make the periods in ' 1.'
+>           and '10.' line up vertically.
 
 Paragraphs
 ----------
