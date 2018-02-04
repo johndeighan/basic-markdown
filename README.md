@@ -42,19 +42,38 @@ longest text line. For example:
 
 will render as:
 
-<div style="color: red">
 
-# heading
 
-	~~~~~~~~~~
+<blockquote>
+
+heading
+-------
+
 	This is a
 	code block
-	~~~~~~~~~~
 
-**markdown**
+</blockquote>
 
-heading number 2
-----------------
+
+<div>
+
+heading
+-------
+
+	This is a
+	code block
 
 </div>
+
+
+<pre>
+
+heading
+-------
+
+	This is a
+	code block
+
+</pre>
+
 
