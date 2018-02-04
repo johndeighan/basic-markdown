@@ -399,6 +399,7 @@ line will end any block of HTML that you insert, so if text
 follows, it will be treated as markdown. This can be useful
 for rendering tables or definition lists. For example:
 
+	<center>
 	<table align="center">
 	<tr>
 	<td>
@@ -414,6 +415,7 @@ for rendering tables or definition lists. For example:
 	</td>
 	</tr>
 	</table>
+	</center>
 
 will be rendered as:
 
@@ -442,4 +444,6 @@ Found in **China**
 > **NOTE:** In the above markdown code, there are
 >           exactly 3 blocks of HTML code.
 >           Between them, there are 2 blocks of
->           markdown code.
+>           markdown code. Note that both the `<center>`
+>           tag and the `align="center"` attribute are
+>           completely ignored.
