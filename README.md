@@ -18,7 +18,7 @@ the text will be wrapped to the full width available.
 It is advised that you set up your editor to automatically
 strip any trailing whitespace. If you want to force a
 break in the text, use a '\\' character, then continue your
-text on the next line, i.e. make the '\' the last character
+text on the next line, i.e. make the '\\' the last character
 on the line.
 
 > NOTE: Do not allow any line to begin with a '-' or '*' character.
@@ -56,8 +56,8 @@ You can produce a top level heading by typing the text flush
 left, then following it with a line containing at least 3
 '=' or '-' characters and no other characters. There can be
 more than one line of text, though there is usually only
-one. Also, the number of '=' characters on the last line is
-usually about the same as the width of the longest text
+one. Also, the number of '=' or '-' characters on the last line
+is usually about the same as the width of the longest text
 line. I recommend always having a blank line before and after
 any heading. For example:
 
@@ -177,5 +177,29 @@ will render as:
 
 ---------------------------------------
 
+> NOTE: Markdown lists are actually much more powerful than the
+>       above simplified description. List items can be arbitrarily
+>       long, but can be split in the markdown file. Also, lists
+>       may have sublists, etc. For more information, google
+>       'markdown' or 'github flavored markdown'.
+
 Links
 -----
+
+A link is produced by having (flush left) the text that you wish
+to be displayed with a '[' character before and a ']' character
+after, followed by URL that the link leads to with a '(' character
+before and a ')' character after. For example, this:
+
+	Here is the [GFM specification](https://github.github.com/gfm/)!
+
+will be rendered as:
+
+---------------------------------------
+
+Here is the [GFM specification](https://github.github.com/gfm/)!
+
+---------------------------------------
+
+Images
+------
