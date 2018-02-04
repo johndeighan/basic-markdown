@@ -300,6 +300,7 @@ Inline formatting
 -----------------
 
 Within the text of a paragraph, list item, block quote, etc.
+(but not a code block, where text is taken literally)
 you may apply formatting to words, phrases or other text.
 
 To format text as inline code, surround the text with backticks:
@@ -384,3 +385,59 @@ will render as:
 Basic&copy; Markdown
 
 ---------------------------------------
+
+HTML
+----
+
+You can actually include HTML directly in your document and it
+will output the HTML, which will render the way HTML normally
+renders. However, you should be aware that GitHub performs
+sanitation on your HTML, stripping out any JavaScript code and
+even any CSS styles or classes, so it's virtually impossible to
+affect the styling of your code. Also, in most cases, a blank
+line will end any block of HTML that you insert, so if text
+follows, it will be treated as markdown. This can be useful
+for rendering tables or definition lists. For example:
+
+	<table border="1">
+	<tr>
+		<td>
+
+		Found in **China**
+
+		</td>
+		<td>
+
+		1. A hole in a mountain
+		2. Tibetan prayer flags
+
+		</t>
+	</tr>
+	</table>
+
+will be rendered as:
+
+---------------------------------------
+
+<table border="1">
+<tr>
+<td>
+
+Found in **China**
+
+</td>
+<td>
+
+1. A hole in a mountain
+2. Tibetan prayer flags
+
+</t>
+</tr>
+</table>
+
+---------------------------------------
+
+> **NOTE:** In the above markdown code, there are
+>           exactly 3 blocks of HTML code.
+>           Between them, there are 2 blocks of
+>           markdown code.
