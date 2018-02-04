@@ -401,17 +401,17 @@ for rendering tables or definition lists. For example:
 
 	<table border="1">
 	<tr>
-		<td>
+	<td>
 
-		Found in **China**
+	Found in **China**
 
-		</td>
-		<td>
+	</td>
+	<td>
 
-		1. A hole in a mountain
-		2. Tibetan prayer flags
+	1. A hole in a mountain
+	5. Tibetan prayer flags
 
-		</t>
+	</td>
 	</tr>
 	</table>
 
@@ -429,7 +429,7 @@ Found in **China**
 <td>
 
 1. A hole in a mountain
-2. Tibetan prayer flags
+5. Tibetan prayer flags
 
 </td>
 </tr>
