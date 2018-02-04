@@ -37,7 +37,6 @@ For example:
 
 will render as:
 
-
 ---------------------------------------
 
 This is a
@@ -49,17 +48,18 @@ with where line endings occur.
 
 ---------------------------------------
 
-
 Headings
 --------
 
 You should be able to get by with only 2 levels of headings.
-You can produce a top level heading by typing the text flush left,
-then following it with a line containing at least 3 '=' characters
-and no other characters. There can be more than one line of text,
-though there is usually only one. Also, the number of '=' characters
-on the last line is usually about the same as the width of the
-longest text line. For example:
+You can produce a top level heading by typing the text flush
+left, then following it with a line containing at least 3
+'=' or '-' characters and no other characters. There can be
+more than one line of text, though there is usually only
+one. Also, the number of '=' characters on the last line is
+usually about the same as the width of the longest text
+line. I recommend always having a blank line before and after
+any heading. For example:
 
 	This is a top level heading
 	===========================
@@ -72,6 +72,7 @@ This is a top level heading
 ===========================
 
 ---------------------------------------
+
 Also,
 
 	This is a second level heading
@@ -84,14 +85,27 @@ will render as:
 This is a second level heading
 ------------------------------
 
+---------------------------------------
+
+> NOTE: There is a second style of heading in Markdown which allows
+>       you to have up to 6 levels of heading. However, I find it
+>       less readable. If you need more than 2 levels of heading,
+>       you can google "markdown" or "github flavored markdown"
+>       to find out how to use it.
+
 Code Blocks
 -----------
 
 Blocks of code are produced by taking any block of text, then adding
 a leading TAB character to each line. Blank lines need not, and
-should not, contain a TAB character (no lines should contain any
+should not, contain a TAB character (no lines should ever contain any
 trailing whitespace, i.e. space or TAB characters). Here is an
 example:
+
+> NOTE: Because I'm using code blocks to display Markdown source code,
+>       the following 2 pieces of text are identical. Note, however,
+>       that in the first piece, each non-blank line starts with a
+>       TAB character.
 
 	function sum(x, y) {
 
@@ -112,4 +126,56 @@ will render as:
 Lists
 -----
 
+Like HTML, in Markdown there are 2 kinds of lists: ordered lists
+and unordered lists. In an ordered list, each list item begins
+with an integer, followed by a period, followed by a space character,
+followed by any text you like. Each item should be flush left;
+however, you may optionally include 1, 2 or 3 leading space
+characters. This is useful, for example, to make the numbers line
+up correctly if you have a mix of single digit, 2 digit and/or 3
+digit numbers in the list. Only the number for the first item in the
+list is actually used. After that, the displayed numbers will
+increment by one for each item. This makes it very easy to insert
+items in an ordered list - the numbers actually displayed will
+automatically reorder themselves. Keep in mind, though, that
+Markdown is designed to be readable by itself, even if it isn't
+rendered into HTML, so it's usually a good idea to fix the numbers
+in the list when inserting or deleting list items.
 
+As an example, this:
+
+	1. apples
+	2. oranges
+	3. bananas
+
+will render as:
+
+---------------------------------------
+
+1. apples
+2. oranges
+3. bananas
+
+---------------------------------------
+
+An unordered list can be constructed by having list items where
+each item consists of a '-' character, followed by a space character,
+followed by any desired text. For example, this:
+
+
+	- apples
+	- oranges
+	- bananas
+
+will render as:
+
+---------------------------------------
+
+- apples
+- oranges
+- bananas
+
+---------------------------------------
+
+Links
+-----
