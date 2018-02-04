@@ -5,7 +5,14 @@ This document will teach you a basic subset of full
 markdown syntax. The syntax described should display
 correctly in virtually all implementations of
 markdown, including all implementations of GFM
-(GitHub Flavored Markdown)
+(GitHub flavored markdown).
+
+> NOTE: In markdown, all text, except code blocks, should be
+>       entered flush left. However, technically, you may
+>       start a line with 1, 2 or 3 space characters, and they
+>       will be ignored. This is really only useful for ordered
+>       lists where you may prefer to make the periods in ' 1.'
+>       and '10.' line up vertically.
 
 Paragraphs
 ----------
@@ -87,7 +94,7 @@ This is a second level heading
 
 ---------------------------------------
 
-> NOTE: There is a second style of heading in Markdown which allows
+> NOTE: There is a second style of heading in markdown which allows
 >       you to have up to 6 levels of heading. However, I find it
 >       less readable. If you need more than 2 levels of heading,
 >       you can google "markdown" or "github flavored markdown"
@@ -102,7 +109,7 @@ should not, contain a TAB character (no lines should ever contain any
 trailing whitespace, i.e. space or TAB characters). Here is an
 example:
 
-> NOTE: Because I'm using code blocks to display Markdown source code,
+> NOTE: Because I'm using code blocks to display markdown source code,
 >       the following 2 pieces of text are identical. Note, however,
 >       that in the first piece, each non-blank line starts with a
 >       TAB character.
@@ -126,7 +133,7 @@ will render as:
 Lists
 -----
 
-Like HTML, in Markdown there are 2 kinds of lists: ordered lists
+Like HTML, in markdown there are 2 kinds of lists: ordered lists
 and unordered lists. In an ordered list, each list item begins
 with an integer, followed by a period, followed by a space character,
 followed by any text you like. Each item should be flush left;
@@ -138,7 +145,7 @@ list is actually used. After that, the displayed numbers will
 increment by one for each item. This makes it very easy to insert
 items in an ordered list - the numbers actually displayed will
 automatically reorder themselves. Keep in mind, though, that
-Markdown is designed to be readable by itself, even if it isn't
+markdown is designed to be readable by itself, even if it isn't
 rendered into HTML, so it's usually a good idea to fix the numbers
 in the list when inserting or deleting list items.
 
@@ -203,3 +210,24 @@ Here is the [GFM specification](https://github.github.com/gfm/)!
 
 Images
 ------
+
+An image can be included in a markdown file by having a '!'
+character, followed by the "alt text" for the image (which should
+always be there for screen readers used by visually impaired
+individuals) with a '[' character before and a ']' character
+after, followed by URL of the image with a '(' character
+before and a ')' character after. For example, this:
+
+	![rappelling](https://scontent.fric1-2.fna.fbcdn.net/v/t31.0-8/16252041_10154124695520264_3803006618953557370_o.jpg?oh=2201e8287a123a5183179294344ff13d&oe=5AE6E5CD)
+
+will be rendered as:
+
+---------------------------------------
+
+![rappelling](https://scontent.fric1-2.fna.fbcdn.net/v/t31.0-8/16252041_10154124695520264_3803006618953557370_o.jpg?oh=2201e8287a123a5183179294344ff13d&oe=5AE6E5CD)
+
+---------------------------------------
+
+Block Quote
+-----------
+
