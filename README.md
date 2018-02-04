@@ -419,6 +419,7 @@ will be rendered as:
 
 ---------------------------------------
 
+<center>
 <table align="center">
 <tr>
 <td>
@@ -434,6 +435,7 @@ Found in **China**
 </td>
 </tr>
 </table>
+</center>
 
 ---------------------------------------
 
